@@ -1,0 +1,278 @@
+* {
+    font-family: 'Nunito';
+}
+
+header {
+    box-shadow: 1px 1px 25px rgb(211, 204, 204);
+}
+
+.menus li a {
+    color: #272727;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s linear;
+}
+
+.menus li a:hover {
+    color: #f86d72;
+}
+
+.menus-icon button {
+    background-color: transparent;
+    font-size: 26px;
+    transition: all 0.3s linear;
+}
+
+.menus-icon button:hover {
+    color: #f86d72;
+}
+
+.badge {
+    font-size: 13px;
+    font-weight: 700;
+    /* padding: 5px !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important; */
+}
+
+.offcanvas.offcanvas-start {
+    width: 320px;
+}
+
+.offcanvas-header,
+.offcanvas-body {
+    padding: 25px;
+}
+
+.offcanvas-body {
+    padding-top: 10px;
+}
+
+.nav-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-items a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #272727;
+}
+
+.nav-items li {
+    padding: 4px;
+}
+
+.user-items {
+    font-size: 22px;
+}
+
+.user-items button {
+    border-radius: 4px;
+}
+
+.menu-btn {
+    border: 1px solid #afafaf;
+}
+
+.menu-btn i {
+    font-size: 26px;
+}
+
+/* Main Section */
+.billboard {
+    background-image: url(../images/billboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: calc(100vh - 85px); */
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* Swiper Slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shop-btn {
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    color: #fff;
+    background-color: #f86d72;
+    border: none;
+    padding: 1.125rem 2.625rem;
+    font-size: 1rem;
+    border-radius: 200px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.shop-btn:hover {
+    background-color: #272727;
+}
+
+.banner-content h2 {
+    font-size: 3.9rem;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    line-height: 115%;
+}
+
+.banner-content p {
+    margin-bottom: 30px;
+    color: #272727;
+}
+
+.slide-inner {
+    width: 100%;
+    display: block;
+}
+
+/* shop-sec */
+.shop-sec {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.heading h2{
+    font-weight: 600;
+    color: #272727;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 0;
+    padding-top: 25px;
+}
+
+.card-body h5 {
+    font-weight: 600;
+    color: #272727;
+}
+
+.card-body p {
+    color: #00000080;
+}
+
+.card-body p i {
+    color: #ffc107 !important;
+}
+
+.card-body h4 {
+    color: #f86d72;
+    font-weight: 600;
+}
+
+.btn.cart-btn {
+    background-color: #f86d72;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.btn.cart-btn:hover {
+    border: 1px solid #f86d72;
+    background-color: transparent;
+    color: #f86d72;
+}
+
+/* customer-review */
+.customer-review {
+    background-image: url(../images/billboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.review-sec h5 {
+    font-weight: 600;
+}
+
+.stars i {
+    color: #ffc107;
+}
+
+/* Footer */
+.footer-left p{
+    color: #272727;
+    font-size: 19px;
+}
+
+.social-icon a {
+    color: #afafaf;
+    text-decoration: none;
+    font-size: 22px;
+    transition: all 0.3s linear;
+}
+
+.social-icon a:hover {
+    color: #f86d72;
+}
+
+.quick-link li a{
+    color: #272727;
+    font-weight: 300;
+    transition: all 0.3s linear;
+}
+
+.quick-link li a:hover {
+    color: #f86d72;
+}
+
+.color {
+    color: #272727;
+    font-weight: 300;
+}
+
+.quick-link.footer-right li{
+    font-size: 18px;
+}
+
+.horizontal-line {
+    height: 1px;
+    background-color: #eceaeae8;
+}
+
+.terms span {
+    font-size: 18px;
+    color: #272727;
+    font-weight: 300;
+}
+
+.terms span a{
+    color: #272727;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.terms span a:hover {
+    color: #f86d72;
+}
