@@ -83,6 +83,7 @@ function addToCart(productId) {
     updateCartCount();
     
     Swal.fire({
+        position: "top-end",
         icon: "success",
         title: "Added in Cart",
         showConfirmButton: false,

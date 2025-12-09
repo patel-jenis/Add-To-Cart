@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Font -->
+    <link rel="stylesheet" href="./assets/font/Nunito-font/stylesheet.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Media CSS File -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="position-fixed top-0 start-0 end-0 bg-light z-3">
+        <div class="container-md">
+            <div class="main-header d-flex justify-content-between align-items-center p-3">
+                <div class="logo-img">
+                    <a href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                </div>
+                <div class="d-xl-flex d-none align-items-center">
+                    <ul class="menus d-flex align-items-center m-0 list-unstyled gap-5">
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOGS</a>
+                        </li>
+                        <li>
+                            <a href="#">PAGES</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-xl-flex d-none align-items-center">
+                    <ul class="menus-icon d-flex align-items-center m-0 list-unstyled">
+                        <li>
+                            <button class="border-0"><i class="ri-search-line"></i></button>
+                        </li>
+                        <li>
+                            <button class="border-0"><i class="ri-user-line"></i></button>
+                        </li>
+                        <li>
+                            <button class="border-0"><i class="ri-heart-3-line"></i></button>
+                        </li>
+                        <li>
+                            <button class="border-0 position-relative" onclick="window.location.pathname='./cart.html'">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                    id="count">
+                                    0
+                                </span>
+                                <i class="ri-shopping-cart-line"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-xl-none d-flex align-items-center">
+                    <button class="btn menu-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart-sec">
+        <div class="container">
+            <h2 class="mb-5">Cart Products</h2>
+        </div>
+        <div class="container" id="cartContainer">
+            
+        </div>
+    </section>
+
+    <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+</body>
+
+</html>
