@@ -285,4 +285,38 @@ header {
 
 .btn.qnt-btn {
     background-color: #f86d72;
+    border: 1px solid #f86d72;
+    transition: all 0.3s linear;
+}
+
+.btn.qnt-btn i {
+    color: #fff;
+}
+
+.btn.qnt-btn:hover {
+    border: 1px solid #f86d72;
+    background-color: #fff;
+}
+.btn.qnt-btn:hover i {
+    color: #f86d72;
+}
+
+.btn.btn-delete {
+    background-color: #f86d72;
+    border: 1px solid #f86d72;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.btn.btn-delete:hover {
+    border: 1px solid #f86d72;
+    background-color: #fff;
+}
+.btn.btn-delete:hover i {
+    color: #f86d72;
+}
+
+.btn.btn-delete i {
+    font-size: 20px;
+    color: #ffffffca;
 }
