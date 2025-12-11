@@ -85,35 +85,42 @@
     </header>
 
     <section class="cart-sec">
-        <div class="container">
-            <h2 class="mb-5">Cart Products</h2>
+        <div class="container-lg">
+            <h2 class="mb-4">Cart Products</h2>
+            <div class="text-end me-sm-5" id="clear-sec">
+                <button class="btn clear-btn" id="clear">Clear Cart</button>
+            </div>
         </div>
-        <div class="container" id="cartContainer">
+        <div class="container-lg" id="cartContainer">
             
         </div>
-        <div class="container">
+        <div class="container-lg">
             <div class="horizontal-line mt-5 mb-4"></div>
             <div class="row" id="totalRow">
-                <div class="col-2"></div>
-                <div class="col-2"></div>
-                <div class="col-2"></div>
-                <div class="col-2"></div>
-                <div class="col-2">
+                <div class="col-md-2 col-1"></div>
+                <div class="col-md-2 col-1"></div>
+                <div class="col-md-2 col-1"></div>
+                <div class="col-md-2 col-1"></div>
+                <div class="col-md-2 col-4">
                     <div class="text-center">
                         <h4 id="total-text">Total</h4>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-md-2 col-4">
                     <div class="text-center">
                         <h4 id="total" class="text-success"></h4>
                     </div>
                 </div>
+            </div>
+            <div class="text-end me-sm-5 mt-3" id="check-out-sec">
+                <button class="btn chechout-btn" id="check-out">Check Out <i class="ri-truck-fill"></i></button>
             </div>
         </div>
     </section>
 
     <script src="./assets/js/cart.js"></script>
     <script src="./assets/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

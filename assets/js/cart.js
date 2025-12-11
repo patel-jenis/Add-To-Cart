@@ -13,11 +13,11 @@ function removeProduct(idx) {
     displayCart();
 }
 
-function updateQuantity(idx, qty){
+function updateQuantity(idx, qty) {
     cart[idx].quantity += qty;
-    
-    
-    if(cart[idx].quantity <= 0) {
+
+
+    if (cart[idx].quantity <= 0) {
         removeProduct(idx);
     } else {
         localStorage.setItem("cart", JSON.stringify(cart));
@@ -35,35 +35,35 @@ function displayCart() {
         total += subTotal;
 
         cartContainer.innerHTML += `
-            <div class="row align-items-center my-4">
-                <div class="col-2">
+            <div class="row align-items-center my-md-4 my-5 gy-4">
+                <div class="col-md-2 col-4">
                     <div class="text-center">
                         <button class="btn btn-delete" onclick="removeProduct(${idx})"><i class="ri-delete-bin-2-line"></i></button>
                     </div>
                 </div>
-                <div class="col-1">
+                <div class="col-md-1 col-2">
                     <div>
                         <img src="${product.imageUrl}" alt="book" class="img-fluid rounded-2 shadow">
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-6">
                     <div class="text-center">
                         <h3 class="mb-0">${product.name}</h3>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-md-2 col-4">
                     <div class="text-center">
                         <h4 class="mb-0">$${product.price}</h4>
                     </div>
                 </div>
-                <div class="col-2">
-                    <div class="d-flex align-items-center justify-content-center">
+                <div class="col-md-2 col-4">
+                    <div class="d-flex align-items-center justify-content-start">
                         <button class="btn qnt-btn" onclick="updateQuantity(${idx}, -1)"><i class="ri-subtract-line"></i></button>
                         <h5 class="mx-3 mb-0">${product.quantity}</h5>
                         <button class="btn qnt-btn" onclick="updateQuantity(${idx}, 1)"><i class="ri-add-line"></i></button>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-md-2 col-4">
                     <div class="text-center">
                         <h4 class="text-success mb-0">$${subTotal}</h4>
                     </div>
@@ -72,18 +72,50 @@ function displayCart() {
         `
     });
 
-    if(cart.length === 0) {
+    if (cart.length === 0) {
         document.getElementById("total").innerHTML = "";
         document.getElementById("total-text").innerHTML = "";
+
+        document.getElementById("totalRow").classList.add("d-none");
+        document.getElementById("clear-sec").classList.add("d-none");
+        document.getElementById("check-out-sec").classList.add("d-none");
     } else {
         document.getElementById("total").innerHTML = `$${total}`;
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    if(cart.length === 0) {
+function clearCart() {
+    cart = [];
+    localStorage.setItem("cart", JSON.stringify(cart));
+    displayCart();
+    updateCart();
+
+    document.getElementById("totalRow").classList.add("d-none");
+    document.getElementById("clear-sec").classList.add("d-none");
+    document.getElementById("check-out-sec").classList.add("d-none");
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (cart.length === 0) {
         document.getElementById("totalRow").classList.add("d-none");
+        document.getElementById("clear-sec").classList.add("d-none");
+        document.getElementById("check-out-sec").classList.add("d-none");
     }
     updateCart();
     displayCart();
+})
+
+document.getElementById("clear").addEventListener("click", function () {
+    clearCart();
+})
+
+document.getElementById("check-out").addEventListener("click", function () {
+    Swal.fire({
+        icon: "success",
+        title: "Order Delivered...",
+        showConfirmButton: false,
+        timer: 1500
+    });
+    clearCart();
 })

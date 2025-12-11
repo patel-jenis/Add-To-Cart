@@ -72,6 +72,16 @@ const productRow = document.getElementById("productRow");
 const reviewRow = document.getElementById("reviewRow");
 
 function addToCart(productId) {
+    // Ckeck Item already Exits or Not
+    if (cart.some(item => item.id === productId)) {
+        Swal.fire({
+            icon: "warning",
+            title: "Already in Cart",
+            text: "This product is already added.",
+        });
+        return;
+    }
+
     const product = products.find((pro) => {
         return pro.id === productId;
     });

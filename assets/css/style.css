@@ -283,9 +283,10 @@ header {
     padding-bottom: 60px;
 }
 
-.btn.qnt-btn {
+.btn.qnt-btn, .btn.clear-btn, .chechout-btn {
     background-color: #f86d72;
     border: 1px solid #f86d72;
+    color: #fff;
     transition: all 0.3s linear;
 }
 
@@ -319,4 +320,20 @@ header {
 .btn.btn-delete i {
     font-size: 20px;
     color: #ffffffca;
+}
+
+.btn.clear-btn, .chechout-btn {
+    padding: 8px 15px;
+}
+
+.chechout-btn:hover {
+    background-color: #fff;
+    color: #f86d72;
+    border: 1px solid #f86d72;
+}
+
+.btn.clear-btn:hover {
+    background-color: #fff;
+    color: #f86d72;
+    border: 1px solid #f86d72;
 }
