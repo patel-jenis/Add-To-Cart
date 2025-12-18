@@ -87,12 +87,17 @@
     <section class="cart-sec">
         <div class="container-lg">
             <h2 class="mb-4">Cart Products</h2>
-            <div class="text-end me-sm-5" id="clear-sec">
-                <button class="btn clear-btn" id="clear">Clear Cart</button>
+            <div class="d-sm-flex gap-3 justify-content-end align-items-center" id="clear-sec">
+                <button class="btn clear-btn mb-sm-0 mb-3" id="clear">Clear Cart</button>
+                <select name="" id="sortPrice" class="form-select m-0 w-190">
+                    <option value="">-- Sort By Price --</option>
+                    <option value="1">High To Low</option>
+                    <option value="2">Low To High</option>
+                </select>
             </div>
         </div>
         <div class="container-lg" id="cartContainer">
-            
+
         </div>
         <div class="container-lg">
             <div class="horizontal-line mt-5 mb-4"></div>
@@ -119,7 +124,7 @@
     </section>
 
 
-        <!-- Header Offcanvas -->
+    <!-- Header Offcanvas -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
         <div class="offcanvas-header">
             <div class="logo-img">
@@ -151,7 +156,8 @@
                 <button class="border-0"><i class="ri-search-line"></i></button>
                 <button class="border-0"><i class="ri-user-line"></i></button>
                 <button class="border-0"><i class="ri-heart-3-line"></i></button>
-                <button class="border-0" onclick="window.location.href='cart.html'"><i class="ri-shopping-cart-line"></i></button>
+                <button class="border-0" onclick="window.location.href='cart.html'"><i
+                        class="ri-shopping-cart-line"></i></button>
             </div>
         </div>
     </div>

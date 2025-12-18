@@ -8,31 +8,31 @@ let products = [
     {
         id: 2,
         name: "Heartland Stars",
-        price: 870,
+        price: 800,
         imageUrl: "https://themewagon.github.io/Bookly/images/product-item2.png"
     },
     {
         id: 3,
         name: "Heavenly Bodies",
-        price: 870,
+        price: 750,
         imageUrl: "https://themewagon.github.io/Bookly/images/product-item3.png"
     },
     {
         id: 4,
         name: "His Saving Grace",
-        price: 870,
+        price: 1099,
         imageUrl: "https://themewagon.github.io/Bookly/images/product-item4.png"
     },
     {
         id: 5,
         name: "My Dearest Darkest",
-        price: 870,
+        price: 470,
         imageUrl: "https://themewagon.github.io/Bookly/images/product-item5.png"
     },
     {
         id: 6,
         name: "The Story of Success",
-        price: 870,
+        price: 1270,
         imageUrl: "https://themewagon.github.io/Bookly/images/product-item6.png"
     },
 ];

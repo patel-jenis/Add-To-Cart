@@ -119,3 +119,13 @@ document.getElementById("check-out").addEventListener("click", function () {
     });
     clearCart();
 })
+
+document.getElementById("sortPrice").addEventListener("change", function() {
+    if(this.value == 1) {
+        cart.sort((a, b) => b.price - a.price);
+    } else {
+        cart.sort((a, b) => a.price - b.price);
+    }
+
+    displayCart();
+})
